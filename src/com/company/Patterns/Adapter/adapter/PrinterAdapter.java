@@ -13,7 +13,7 @@ public class PrinterAdapter implements PageListPrinter{
     public void print(List<String> list) {
         Iterator<String> iterator = list.iterator();
         while (iterator.hasNext()){
-            System.out.println(iterator.next());
+            printer.print(iterator.next());
 
         }
        /* for (String text : list) {
